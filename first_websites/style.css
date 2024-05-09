@@ -1,0 +1,51 @@
+
+    a {
+        color : black ; 
+        text-decoration:none;
+    }
+    
+    h1{
+        font-size: 50px;
+        text-align: center;
+        border-bottom : 2px solid gray;
+        margin:0;
+        padding:20px;
+    }
+
+    #active{
+        color:red;
+    }
+
+    ol {
+        border-right: 2px solid gray;
+        width:100px;
+        margin:0;
+        padding:20px;
+    }
+
+    #grid{
+            display:grid;
+            grid-template-columns: 150px 1fr;
+    }
+
+    ol{
+        padding-left:33px;
+    }
+
+    #article{
+        padding-left:25px;
+    }
+
+    /*responsive WEB*/
+    @media(max-width:800px){
+        #grid{
+            /*grid 였던것이 block으로 바뀜-> 화면 전체를 사용하니까 자연스럽게 밑으로 내려옴*/
+            display:block;
+        }
+        ol {
+        border-right: none;
+        }
+        h1{
+        border-bottom :none;
+    }
+}
